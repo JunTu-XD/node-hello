@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: helllo-app
+  template:
+    metadata:
+      labels:
+        run: helllo-app
+    spec:
+      containers:
+      - name: helllo-app
+        image: hello
+        ports:
+          - containerPort: 80
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: 200m
+        securityContext:
+          allowPrivilegeEscalation: false
