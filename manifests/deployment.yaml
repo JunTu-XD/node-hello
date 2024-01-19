@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-application
+  name: hello-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: helllo-app
+      run: hello-app
   template:
     metadata:
       labels:
-        run: helllo-app
+        run: hello-app
     spec:
       containers:
-      - name: helllo-app
+      - name: hello-app
         image: hello
         ports:
           - containerPort: 80
