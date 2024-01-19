@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-container
-        image: hello
+        image: docker.io/hello
         ports:
           - containerPort: 80
         imagePullPolicy: Never
