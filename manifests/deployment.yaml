@@ -13,7 +13,7 @@ spec:
         run: hello-app
     spec:
       containers:
-      - name: hello-app
+      - name: hello-container
         image: hello
         ports:
           - containerPort: 80
