@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-container
-        image: docker.io/juntunju2012/hello
+        image: docker.io/juntunju2012/hello:1.0.0
         ports:
           - containerPort: 80
         imagePullPolicy: Always
