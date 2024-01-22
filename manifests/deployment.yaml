@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-container
-        image: docker.io/juntunju2012/hello:1.0.1
+        image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         ports:
           - containerPort: 80
         imagePullPolicy: Always
